@@ -1,0 +1,68 @@
+[
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build",
+  "command": "/usr/bin/c++ -DRESOURCE_DIR=\"\\\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\\\"\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine\" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/Small_Engine.dir/main.cpp.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/main.cpp\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/main.cpp",
+  "output": "CMakeFiles/Small_Engine.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build",
+  "command": "/usr/bin/c++ -DRESOURCE_DIR=\"\\\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\\\"\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine\" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/Small_Engine.dir/src/shader.cpp.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/shader.cpp\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/shader.cpp",
+  "output": "CMakeFiles/Small_Engine.dir/src/shader.cpp.o"
+},
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build",
+  "command": "/usr/bin/c++ -DRESOURCE_DIR=\"\\\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\\\"\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine\" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/Small_Engine.dir/src/mesh.cpp.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/mesh.cpp\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/mesh.cpp",
+  "output": "CMakeFiles/Small_Engine.dir/src/mesh.cpp.o"
+},
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build",
+  "command": "/usr/bin/c++ -DRESOURCE_DIR=\"\\\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\\\"\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine\" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/Small_Engine.dir/src/window.cpp.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/window.cpp\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/window.cpp",
+  "output": "CMakeFiles/Small_Engine.dir/src/window.cpp.o"
+},
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build",
+  "command": "/usr/bin/c++ -DRESOURCE_DIR=\"\\\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\\\"\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine\" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/Small_Engine.dir/src/renderer.cpp.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/renderer.cpp\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/renderer.cpp",
+  "output": "CMakeFiles/Small_Engine.dir/src/renderer.cpp.o"
+},
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build",
+  "command": "/usr/bin/c++ -DRESOURCE_DIR=\"\\\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\\\"\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine\" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/Small_Engine.dir/src/application.cpp.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/application.cpp\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/application.cpp",
+  "output": "CMakeFiles/Small_Engine.dir/src/application.cpp.o"
+},
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build",
+  "command": "/usr/bin/c++ -DRESOURCE_DIR=\"\\\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\\\"\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine\" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/Small_Engine.dir/src/camera.cpp.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/camera.cpp\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/camera.cpp",
+  "output": "CMakeFiles/Small_Engine.dir/src/camera.cpp.o"
+},
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build",
+  "command": "/usr/bin/c++ -DRESOURCE_DIR=\"\\\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\\\"\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine\" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/Small_Engine.dir/src/material.cpp.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/material.cpp\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/material.cpp",
+  "output": "CMakeFiles/Small_Engine.dir/src/material.cpp.o"
+},
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build",
+  "command": "/usr/bin/c++ -DRESOURCE_DIR=\"\\\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\\\"\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine\" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/Small_Engine.dir/src/input.cpp.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/input.cpp\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/input.cpp",
+  "output": "CMakeFiles/Small_Engine.dir/src/input.cpp.o"
+},
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build",
+  "command": "/usr/bin/c++ -DRESOURCE_DIR=\"\\\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\\\"\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\" -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine\" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/Small_Engine.dir/src/objloader.cpp.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/objloader.cpp\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/objloader.cpp",
+  "output": "CMakeFiles/Small_Engine.dir/src/objloader.cpp.o"
+},
+{
+  "directory": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/dependencies/glad",
+  "command": "/usr/bin/cc  -I\"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include\"  -arch arm64 -o CMakeFiles/glad.dir/src/gl.c.o -c \"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/src/gl.c\"",
+  "file": "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/src/gl.c",
+  "output": "dependencies/glad/CMakeFiles/glad.dir/src/gl.c.o"
+}
+]

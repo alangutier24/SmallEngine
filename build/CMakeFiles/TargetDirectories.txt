@@ -1,0 +1,8 @@
+/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/CMakeFiles/Small_Engine.dir
+/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/CMakeFiles/edit_cache.dir
+/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/CMakeFiles/rebuild_cache.dir
+/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/dependencies/glad/CMakeFiles/glad.dir
+/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/dependencies/glad/CMakeFiles/edit_cache.dir
+/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/dependencies/glad/CMakeFiles/rebuild_cache.dir
+/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/dependencies/glm/CMakeFiles/edit_cache.dir
+/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/dependencies/glm/CMakeFiles/rebuild_cache.dir

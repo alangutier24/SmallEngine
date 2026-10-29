@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/cmake_install.cmake",
+		"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/dependencies/glad/cmake_install.cmake",
+		"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/dependencies/glm/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
