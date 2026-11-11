@@ -166,30 +166,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Small_Engine.dir/build.make CMakeFiles/Small_Engine.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/application.o: src/application.cpp.o
-.PHONY : src/application.o
-
-# target to build an object file
-src/application.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Small_Engine.dir/build.make CMakeFiles/Small_Engine.dir/src/application.cpp.o
-.PHONY : src/application.cpp.o
-
-src/application.i: src/application.cpp.i
-.PHONY : src/application.i
-
-# target to preprocess a source file
-src/application.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Small_Engine.dir/build.make CMakeFiles/Small_Engine.dir/src/application.cpp.i
-.PHONY : src/application.cpp.i
-
-src/application.s: src/application.cpp.s
-.PHONY : src/application.s
-
-# target to generate assembly for a file
-src/application.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Small_Engine.dir/build.make CMakeFiles/Small_Engine.dir/src/application.cpp.s
-.PHONY : src/application.cpp.s
-
 src/camera.o: src/camera.cpp.o
 .PHONY : src/camera.o
 
@@ -358,6 +334,30 @@ src/shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Small_Engine.dir/build.make CMakeFiles/Small_Engine.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
 
+src/small_engine.o: src/small_engine.cpp.o
+.PHONY : src/small_engine.o
+
+# target to build an object file
+src/small_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Small_Engine.dir/build.make CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o
+.PHONY : src/small_engine.cpp.o
+
+src/small_engine.i: src/small_engine.cpp.i
+.PHONY : src/small_engine.i
+
+# target to preprocess a source file
+src/small_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Small_Engine.dir/build.make CMakeFiles/Small_Engine.dir/src/small_engine.cpp.i
+.PHONY : src/small_engine.cpp.i
+
+src/small_engine.s: src/small_engine.cpp.s
+.PHONY : src/small_engine.s
+
+# target to generate assembly for a file
+src/small_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Small_Engine.dir/build.make CMakeFiles/Small_Engine.dir/src/small_engine.cpp.s
+.PHONY : src/small_engine.cpp.s
+
 src/window.o: src/window.cpp.o
 .PHONY : src/window.o
 
@@ -395,9 +395,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/application.o"
-	@echo "... src/application.i"
-	@echo "... src/application.s"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
@@ -419,6 +416,9 @@ help:
 	@echo "... src/shader.o"
 	@echo "... src/shader.i"
 	@echo "... src/shader.s"
+	@echo "... src/small_engine.o"
+	@echo "... src/small_engine.i"
+	@echo "... src/small_engine.s"
 	@echo "... src/window.o"
 	@echo "... src/window.i"
 	@echo "... src/window.s"

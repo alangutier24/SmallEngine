@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/main.cpp" "CMakeFiles/Small_Engine.dir/main.cpp.o" "gcc" "CMakeFiles/Small_Engine.dir/main.cpp.o.d"
-  "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/application.cpp" "CMakeFiles/Small_Engine.dir/src/application.cpp.o" "gcc" "CMakeFiles/Small_Engine.dir/src/application.cpp.o.d"
   "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/camera.cpp" "CMakeFiles/Small_Engine.dir/src/camera.cpp.o" "gcc" "CMakeFiles/Small_Engine.dir/src/camera.cpp.o.d"
   "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/input.cpp" "CMakeFiles/Small_Engine.dir/src/input.cpp.o" "gcc" "CMakeFiles/Small_Engine.dir/src/input.cpp.o.d"
   "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/material.cpp" "CMakeFiles/Small_Engine.dir/src/material.cpp.o" "gcc" "CMakeFiles/Small_Engine.dir/src/material.cpp.o.d"
@@ -17,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/objloader.cpp" "CMakeFiles/Small_Engine.dir/src/objloader.cpp.o" "gcc" "CMakeFiles/Small_Engine.dir/src/objloader.cpp.o.d"
   "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/renderer.cpp" "CMakeFiles/Small_Engine.dir/src/renderer.cpp.o" "gcc" "CMakeFiles/Small_Engine.dir/src/renderer.cpp.o.d"
   "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/shader.cpp" "CMakeFiles/Small_Engine.dir/src/shader.cpp.o" "gcc" "CMakeFiles/Small_Engine.dir/src/shader.cpp.o.d"
+  "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/small_engine.cpp" "CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o" "gcc" "CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o.d"
   "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/window.cpp" "CMakeFiles/Small_Engine.dir/src/window.cpp.o" "gcc" "CMakeFiles/Small_Engine.dir/src/window.cpp.o.d"
   )
 

@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Small_Engine.dir/main.cpp.o"
   "CMakeFiles/Small_Engine.dir/main.cpp.o.d"
-  "CMakeFiles/Small_Engine.dir/src/application.cpp.o"
-  "CMakeFiles/Small_Engine.dir/src/application.cpp.o.d"
   "CMakeFiles/Small_Engine.dir/src/camera.cpp.o"
   "CMakeFiles/Small_Engine.dir/src/camera.cpp.o.d"
   "CMakeFiles/Small_Engine.dir/src/input.cpp.o"
@@ -17,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Small_Engine.dir/src/renderer.cpp.o.d"
   "CMakeFiles/Small_Engine.dir/src/shader.cpp.o"
   "CMakeFiles/Small_Engine.dir/src/shader.cpp.o.d"
+  "CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o"
+  "CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o.d"
   "CMakeFiles/Small_Engine.dir/src/window.cpp.o"
   "CMakeFiles/Small_Engine.dir/src/window.cpp.o.d"
   "Small_Engine"

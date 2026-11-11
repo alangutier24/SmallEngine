@@ -1,5 +1,5 @@
-#ifndef APPLICATION_H
-#define APPLICATION_H
+#ifndef SMALL_ENGINE_H
+#define SMALL_ENGINE_H
 
 #include "window.h"
 #include "input.h"
@@ -12,14 +12,14 @@
 #include <memory>
 #include <vector>
 
-class Application
+class SmallEngine
 {
 public:
-    Application(int width, int height, const char* title);
-    ~Application();
+    SmallEngine(int width, int height, const char* title);
+    ~SmallEngine();
 
-    Application(const Application&) = delete;
-    Application& operator=(const Application&) = delete;
+    SmallEngine(const SmallEngine&) = delete;
+    SmallEngine& operator=(const SmallEngine&) = delete;
 
     void Run();
 

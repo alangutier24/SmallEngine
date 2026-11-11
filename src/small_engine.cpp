@@ -1,11 +1,11 @@
-#include "application.h"
+#include "small_engine.h"
 
 #include "objloader.h"
 #include <memory>
 
 #include <cstdio>
 
-Application::Application(int width, int height, const char* title)
+SmallEngine::SmallEngine(int width, int height, const char* title)
     : window(width, height, title),
       input(window),
       renderer(window),
@@ -19,9 +19,9 @@ Application::Application(int width, int height, const char* title)
     resourcesReady = LoadResources();
 }
 
-Application::~Application() = default;
+SmallEngine::~SmallEngine() = default;
 
-bool Application::LoadResources()
+bool SmallEngine::LoadResources()
 {
     meshShader   = std::make_unique<Shader>(RESOURCE_DIR "/shaders/mtl.vert",
                                             RESOURCE_DIR "/shaders/mtl.frag");
@@ -30,13 +30,9 @@ bool Application::LoadResources()
 
     if (!meshShader->IsValid() || !volumeShader->IsValid())
     {
-        std::fprintf(stderr, "Application: shaders invalidos\n");
+        std::fprintf(stderr, "SmallEngine: shaders invalidos\n");
         return false;
     }
-
-    // TODO: cargar la ballena con tinyobj -> vertices, submeshes, materials
-    // whale = std::make_unique<Mesh>(vertices);
-    // whale->SetSubmeshes(submeshes);
 
     std::vector<Vertex> cubeVerts(8);
     cubeVerts[0].position = { -0.5f, -0.5f, -0.5f };
@@ -86,7 +82,7 @@ bool Application::LoadResources()
     return true;
 }
 
-void Application::Run()
+void SmallEngine::Run()
 {
     if (!resourcesReady) return;
 
@@ -107,7 +103,7 @@ void Application::Run()
     }
 }
 
-void Application::ProcessInput(float deltaTime)
+void SmallEngine::ProcessInput(float deltaTime)
 {
     if (input.WasKeyPressed(GLFW_KEY_ESCAPE))
         input.SetCursorLocked(!input.IsCursorLocked());
@@ -130,12 +126,12 @@ void Application::ProcessInput(float deltaTime)
         camera.Move(glm::normalize(dir), deltaTime);
 }
 
-void Application::Update(float deltaTime)
+void SmallEngine::Update(float deltaTime)
 {
     (void)deltaTime;
 }
 
-void Application::Render()
+void SmallEngine::Render()
 {
     renderer.BeginFrame(camera);
 

@@ -142,19 +142,19 @@ CMakeFiles/Small_Engine.dir/src/renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Small_Engine.dir/src/renderer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/renderer.cpp" -o CMakeFiles/Small_Engine.dir/src/renderer.cpp.s
 
-CMakeFiles/Small_Engine.dir/src/application.cpp.o: CMakeFiles/Small_Engine.dir/flags.make
-CMakeFiles/Small_Engine.dir/src/application.cpp.o: /Users/alangutierrezramirez/Desktop/My\ Games/SmallEngine/src/application.cpp
-CMakeFiles/Small_Engine.dir/src/application.cpp.o: CMakeFiles/Small_Engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Small_Engine.dir/src/application.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Small_Engine.dir/src/application.cpp.o -MF CMakeFiles/Small_Engine.dir/src/application.cpp.o.d -o CMakeFiles/Small_Engine.dir/src/application.cpp.o -c "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/application.cpp"
+CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o: CMakeFiles/Small_Engine.dir/flags.make
+CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o: /Users/alangutierrezramirez/Desktop/My\ Games/SmallEngine/src/small_engine.cpp
+CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o: CMakeFiles/Small_Engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o -MF CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o.d -o CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o -c "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/small_engine.cpp"
 
-CMakeFiles/Small_Engine.dir/src/application.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Small_Engine.dir/src/application.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/application.cpp" > CMakeFiles/Small_Engine.dir/src/application.cpp.i
+CMakeFiles/Small_Engine.dir/src/small_engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Small_Engine.dir/src/small_engine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/small_engine.cpp" > CMakeFiles/Small_Engine.dir/src/small_engine.cpp.i
 
-CMakeFiles/Small_Engine.dir/src/application.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Small_Engine.dir/src/application.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/application.cpp" -o CMakeFiles/Small_Engine.dir/src/application.cpp.s
+CMakeFiles/Small_Engine.dir/src/small_engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Small_Engine.dir/src/small_engine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/src/small_engine.cpp" -o CMakeFiles/Small_Engine.dir/src/small_engine.cpp.s
 
 CMakeFiles/Small_Engine.dir/src/camera.cpp.o: CMakeFiles/Small_Engine.dir/flags.make
 CMakeFiles/Small_Engine.dir/src/camera.cpp.o: /Users/alangutierrezramirez/Desktop/My\ Games/SmallEngine/src/camera.cpp
@@ -219,7 +219,7 @@ Small_Engine_OBJECTS = \
 "CMakeFiles/Small_Engine.dir/src/mesh.cpp.o" \
 "CMakeFiles/Small_Engine.dir/src/window.cpp.o" \
 "CMakeFiles/Small_Engine.dir/src/renderer.cpp.o" \
-"CMakeFiles/Small_Engine.dir/src/application.cpp.o" \
+"CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o" \
 "CMakeFiles/Small_Engine.dir/src/camera.cpp.o" \
 "CMakeFiles/Small_Engine.dir/src/material.cpp.o" \
 "CMakeFiles/Small_Engine.dir/src/input.cpp.o" \
@@ -233,7 +233,7 @@ Small_Engine: CMakeFiles/Small_Engine.dir/src/shader.cpp.o
 Small_Engine: CMakeFiles/Small_Engine.dir/src/mesh.cpp.o
 Small_Engine: CMakeFiles/Small_Engine.dir/src/window.cpp.o
 Small_Engine: CMakeFiles/Small_Engine.dir/src/renderer.cpp.o
-Small_Engine: CMakeFiles/Small_Engine.dir/src/application.cpp.o
+Small_Engine: CMakeFiles/Small_Engine.dir/src/small_engine.cpp.o
 Small_Engine: CMakeFiles/Small_Engine.dir/src/camera.cpp.o
 Small_Engine: CMakeFiles/Small_Engine.dir/src/material.cpp.o
 Small_Engine: CMakeFiles/Small_Engine.dir/src/input.cpp.o

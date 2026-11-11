@@ -1,8 +1,8 @@
-#include "application.h"
+#include "small_engine.h"
 
 int main()
 {
-    Application app(1280, 720, "SmallEngine");
+    SmallEngine app(1280, 720, "SmallEngine");
 
     if (!app.IsReady())
         return -1;

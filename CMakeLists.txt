@@ -33,7 +33,7 @@ target_sources(Small_Engine
         src/mesh.cpp
         src/window.cpp
         src/renderer.cpp
-        src/application.cpp
+        src/small_engine.cpp
         src/camera.cpp
         src/material.cpp
         src/input.cpp
@@ -50,7 +50,7 @@ target_sources(Small_Engine
             include/mesh.h
             include/window.h
             include/renderer.h
-            include/application.h
+            include/small_enigne.h
             include/camera.h
             include/material.h
             include/input.h

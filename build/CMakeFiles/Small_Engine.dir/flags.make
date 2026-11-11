@@ -6,7 +6,7 @@ CXX_DEFINES = -DRESOURCE_DIR="\"/Users/alangutierrezramirez/Desktop/My Games/Sma
 
 CXX_INCLUDES = -I"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/include" -I"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies" -I"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/resources" -I"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine/dependencies/glad/include" -I"/Users/alangutierrezramirez/Desktop/My Games/SmallEngine" -isystem /opt/homebrew/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
-CXX_FLAGSarm64 =  -arch arm64
+CXX_FLAGSarm64 = -O3 -DNDEBUG -arch arm64
 
-CXX_FLAGS =  -arch arm64
+CXX_FLAGS = -O3 -DNDEBUG -arch arm64
 
