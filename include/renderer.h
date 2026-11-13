@@ -15,6 +15,9 @@ public:
 
     void Init();
 
+    // Render de referencia en CPU (PPM). No necesita ventana ni contexto GL.
+    static bool RenderCpuReference(const char* path);
+
     void BeginFrame(const Camera& camera);
     void EndFrame();
 
@@ -35,6 +38,7 @@ public:
 
 private:
     void UpdateViewport();
+    void BakeDensityTexture();
 
 private:
     Window& window;

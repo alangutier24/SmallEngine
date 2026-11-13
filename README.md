@@ -77,6 +77,9 @@ cd SmallEngine
 cmake -S . -B build
 cmake --build build
 ./build/Small_Engine
+
+# CPU reference render: writes out.ppm and exits (no window or GL context)
+./build/Small_Engine --cpu-reference
 ```
 
 **Controls:** `WASD` move · `Q` / `E` down / up · Mouse look · `Esc` toggle cursor
