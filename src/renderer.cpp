@@ -90,6 +90,15 @@ std::array<int, 512> makePermutation(unsigned seed = 2024) {
     return p;
 }
 
+// La tabla no cambia nunca: se construye una vez y se reutiliza. Antes se
+// rebarajaba (mt19937 + shuffle) en cada muestra de ruido, que era casi todo
+// el coste del render de CPU y del bake. La inicializacion de un static local
+// es thread-safe desde C++11, asi que los hilos del render pueden compartirla.
+static const std::array<int, 512>& permutation() {
+    static const std::array<int, 512> table = makePermutation();
+    return table;
+}
+
 static bool intersectBox(const glm::vec3& orig, const glm::vec3& dir,
                          float& tNear, float& tFar) {
     // La division por 0 da +-inf igual que en GLSL, el min/max lo absorbe.
@@ -130,7 +139,7 @@ static inline float lerp(float a, float b, float t) { return a + t * (b - a); }
  
 static float perlin(const glm::vec3& P) {
 
-    auto p = makePermutation();
+    const std::array<int, 512>& p = permutation();
 
     int X = int(std::floor(P.x)) & 255;
     int Y = int(std::floor(P.y)) & 255;
@@ -252,13 +261,10 @@ void Renderer::DrawVolumetric(const Mesh& mesh, Shader& shader, const glm::mat4&
     SetDepthMask(false);
     SetBlending(true);
 
-    auto p = makePermutation();
-
     glm::vec3 localCam = glm::vec3(glm::inverse(model) * glm::vec4(cameraPos, 1.0f));
 
     shader.Bind();
-    // tras crear/linkar el shader
-    auto perm = makePermutation();                            // o como llames a glUseProgram
+    const std::array<int, 512>& perm = permutation();
     shader.SetIntArray("p", perm.data(), int(perm.size()));
     shader.SetMat4("model",      model);
     shader.SetMat4("view",       view);
@@ -280,14 +286,9 @@ struct Grid {
 
 void Renderer::DrawSmoke(const Mesh& mesh, Shader& shader, const glm::mat4& model, float time)
 {
-
-    auto p = makePermutation();
-
     glm::vec3 localCam = glm::vec3(glm::inverse(model) * glm::vec4(cameraPos, 1.0f));
 
     shader.Bind();
-    // tras crear/linkar el shader
-    auto perm = makePermutation();                            // o como llames a glUseProgram
     shader.SetMat4("model",      model);
     shader.SetMat4("view",       view);
     shader.SetMat4("projection", projection);
@@ -326,9 +327,14 @@ void Renderer::Init()
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     UpdateViewport();
 
+    BakeDensityTexture();
+}
 
-    auto p = makePermutation();
- 
+// Render de referencia en CPU: el mismo integrador que smoke.frag, para
+// comparar contra la salida de la GPU. No toca OpenGL, asi que se puede
+// lanzar sin ventana ni contexto (ver --cpu-reference en main.cpp).
+bool Renderer::RenderCpuReference(const char* path)
+{
     const int   width  = 640;
     const int   height = 480;
     const float fov    = glm::radians(45.0f);
@@ -375,7 +381,8 @@ void Renderer::Init()
     for (auto& th : pool) th.join();
  
     // PPM binario. Sin gamma, igual que el shader (no hay sRGB writeback).
-    std::ofstream ofs("out.ppm", std::ios::binary);
+    std::ofstream ofs(path, std::ios::binary);
+    if (!ofs) return false;
     ofs << "P6\n" << width << " " << height << "\n255\n";
     for (const glm::vec3& c : framebuffer) {
         for (int k = 0; k < 3; ++k) {
@@ -385,8 +392,12 @@ void Renderer::Init()
         }
     }
     ofs.close();
+    return bool(ofs);
+}
 
-
+// Densidad bakeada en CPU a una textura 3D R32F que muestrea smoke.frag.
+void Renderer::BakeDensityTexture()
+{
     int res = 128;
     std::vector<float> data(size_t(res) * res * res);
 
