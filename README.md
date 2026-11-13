@@ -1,13 +1,13 @@
-<!-- HERO: replace with a GIF/screenshot of the GPU volume in the running app (fly-through ~5–10 s, under 10 MB) -->
+<!-- TODO(hero): add docs/media/hero.gif — a 5–10 s fly-through of the GPU volume in the running app (under 10 MB) — and show it here -->
 <p align="center">
-  <img src="docs/media/hero.gif" alt="SmallEngine — real-time volumetric smoke" width="100%">
+  <img src="docs/media/cpu_reference.png" alt="SmallEngine — ray-marched smoke volume, CPU reference render" width="640">
 </p>
 
 <h1 align="center">SmallEngine</h1>
 
 <p align="center">
   <b>A small C++ / OpenGL renderer built from scratch to explore real-time volumetric rendering.</b><br>
-  Ray-marched smoke, clouds and light scattering — validated against a multithreaded CPU reference.
+  Ray-marched smoke with self-shadowing and anisotropic scattering — validated against a multithreaded CPU reference.
 </p>
 
 <p align="center">
@@ -41,10 +41,7 @@ The core of the project. The volume lives inside a unit cube; each fragment marc
 
 The same integrator is implemented in C++ and run on the CPU, split into row bands across all hardware threads, writing a PPM image. It's used to validate the GPU shader against a known-good result.
 
-<p align="center">
-  <img src="docs/media/cpu_reference.png" alt="CPU reference render of the smoke volume" width="480"><br>
-  <sub>CPU reference render — 640×480, self-shadowed smoke lit from above</sub>
-</p>
+The image at the top of this page is that reference: 640×480, self-shadowed smoke lit from above, written by the integrator in [`src/renderer.cpp`](src/renderer.cpp). The GPU path is the same algorithm in [`resources/shaders/smoke.frag`](resources/shaders/smoke.frag), sampling the baked density texture.
 
 ## Engine
 
@@ -69,7 +66,7 @@ graph LR
 
 ## Build & Run
 
-Requirements: CMake 3.23+, a C++ compiler, GLFW 3.4.
+Requirements: CMake 3.23+, a C++17 compiler, GLFW 3.4. Developed and tested on macOS (Apple Silicon); other platforms are on the roadmap.
 
 ```bash
 # macOS
@@ -85,8 +82,6 @@ cmake --build build
 **Controls:** `WASD` move · `Q` / `E` down / up · Mouse look · `Esc` toggle cursor
 
 ## Roadmap
-
-<!-- Adjust to your actual plan -->
 
 - [x] Engine core (window, input, camera, renderer)
 - [x] OBJ/MTL loading with submeshes
@@ -105,4 +100,4 @@ cmake --build build
 
 Built by **Alan Gutiérrez** — graphics & gameplay programmer.
 
-[GitHub](https://github.com/alangutier24) · [LinkedIn](#) · [Portfolio](#)
+[Portfolio](https://alangutier24.github.io/alangutierrezramirez/) · [GitHub](https://github.com/alangutier24) · [LinkedIn](https://www.linkedin.com/in/alan-gutierrez-ramirez-81379921b)
