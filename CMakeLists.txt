@@ -50,7 +50,7 @@ target_sources(Small_Engine
             include/mesh.h
             include/window.h
             include/renderer.h
-            include/small_enigne.h
+            include/small_engine.h
             include/camera.h
             include/material.h
             include/input.h

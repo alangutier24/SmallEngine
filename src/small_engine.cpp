@@ -58,7 +58,7 @@ bool SmallEngine::LoadResources()
     whaleTransform = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -10.0f));
     whaleTransform = glm::scale(whaleTransform, glm::vec3(1.0f));
 
-    LoadedModel model = OBJLoader::Load(RESOURCE_DIR "/obj/OBJ/whale.obj", RESOURCE_DIR "/obj/OBJ");
+    LoadedModel model = OBJLoader::Load(RESOURCE_DIR "/obj/OBJ/Whale.obj", RESOURCE_DIR "/obj/OBJ");
     if (!model.valid) return false;
 
     whale     = std::move(model.mesh);
